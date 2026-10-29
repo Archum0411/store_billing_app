@@ -36,7 +36,7 @@
                                             <div class="col-12 col-lg-6">
                                                 <label for="email" class="form-label">Email</label>
                                                 <input type="email" class="form-control" id="email" name="email"
-                                                    placeholder="Email" required value="{{ old('email', $user->email) }}">
+                                                    placeholder="Email" required value="{{ old('email', $user->email) }}" disabled>
                                                 @error('email')
                                                     <span style="color: red">{{ $message }}</span>
                                                 @enderror
@@ -45,7 +45,7 @@
                                             <div class="col-12 col-lg-6">
                                                 <label class="form-label">Role</label>
 
-                                                <select class="form-select" name="roles[]" required>
+                                                <select class="form-select" name="roles[]" required disabled>
                                                     <option value="">Select Role</option>
                                                     @foreach ($roles as $role)
                                                         <option value="{{ $role }}"
@@ -62,7 +62,7 @@
 
                                             <div class="col-12 col-lg-6">
                                                 <label for="status" class="form-label">Status</label>
-                                                <select class="form-select" name="status">
+                                                <select class="form-select" name="status" disabled>
                                                     <option value="">Choose</option>
                                                     <option value="1" {{ old('status', $user->status) == '1' ? 'selected' : '' }}>
                                                         Active</option>

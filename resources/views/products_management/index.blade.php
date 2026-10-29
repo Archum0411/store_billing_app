@@ -23,8 +23,8 @@
                                 <th>Sl No</th>
                                 <th>Product Name</th>
                                 <th>Price</th>
-                                <th>tax</th>
-                                <th>total_stock</th>
+                                <th>Tax</th>
+                                <th>Total Stock</th>
                                 <th>Stock on Hand</th>
                                 <th>Status</th>
                                 <th>Action</th>
